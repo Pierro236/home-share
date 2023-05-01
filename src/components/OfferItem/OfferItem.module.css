@@ -1,0 +1,41 @@
+.offerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: white;
+  box-shadow: black 0px 0px 5px 0px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.offerContainer:hover {
+  transform: scale(1.05);
+}
+
+.offerImage {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+}
+
+.offerImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offerDescription {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  font-family: "Merriweather", serif;
+  color: #1c3988;
+  text-align: center;
+}

@@ -1,0 +1,17 @@
+.offerListContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.offerSection {
+  height: 100vh;
+  background-color: #f3f3fa;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  color: #1c3988;
+  padding-bottom: 10px;
+}
