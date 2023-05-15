@@ -9,20 +9,21 @@
   position: fixed;
   background-color: white;
   z-index: 1000;
+  justify-content: space-between;
 }
 
-.navbarContainer li {
-  padding-left: 10%;
-}
-
-.links {
-  color: black;
-  text-decoration: none;
+.navbarContainer a {
+  width: 80px;
+  align-items: center;
+  display: block;
+  justify-content: center;
 }
 
 li {
-  list-style: none;
+  color: black;
   text-decoration: none;
+  list-style: none;
+  padding-left: 10%;
 }
 
 .logo {
@@ -37,7 +38,8 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 10%;
   border-radius: 10px;
   color: whitesmoke;
+  margin-right: 12% !important;
+  text-decoration: none;
 }

@@ -18,6 +18,21 @@ const OfferItems = [
     title: "Apartment in the center of Valencia",
     image: offer3,
   },
+  {
+    id: "3ab",
+    title: "Apartment in the center of Madrid",
+    image: offer1,
+  },
+  {
+    id: "4ab",
+    title: "Apartment in the center of Barcelona",
+    image: offer2,
+  },
+  {
+    id: "5ab",
+    title: "Apartment in the center of Valencia",
+    image: offer3,
+  },
 ];
 
 export default OfferItems;

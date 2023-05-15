@@ -14,29 +14,23 @@ function Navbar() {
           className={styles.logo}
           onClick={() => navigate("/")}
         />
-        <li>
-          <Link to={"/"} style={{ textDecoration: "none" }}>
-            Sign in
-          </Link>
-        </li>
-        <li>
-          <Link to={"/offers"} style={{ textDecoration: "none" }}>
-            Offers
-          </Link>
-        </li>
-        <li>
-          <Link to={"/about"} style={{ textDecoration: "none" }}>
-            About us{" "}
-          </Link>
-        </li>
-        <li>
-          <Link to={"/faq"} style={{ textDecoration: "none" }}>
-            FAQ
-          </Link>
-        </li>
+        <Link to={"/"} style={{ textDecoration: "none" }}>
+          <li>Sign in</li>
+        </Link>
+        <Link to={"/offers"} style={{ textDecoration: "none" }}>
+          <li>Offers</li>
+        </Link>
+        <Link to={"/about"} style={{ textDecoration: "none" }}>
+          <li>About us </li>
+        </Link>
+        <Link to={"/faq"} style={{ textDecoration: "none" }}>
+          <li>FAQ</li>
+        </Link>
         <div className={styles.userProfile}>
           <BiUserCircle color="white" size={30} style={{ paddingRight: 10 }} />
-          <Link>Profile</Link>
+          <Link>
+            <li style={{ color: "white" }}>Profile</li>
+          </Link>
         </div>
       </div>
     </>
