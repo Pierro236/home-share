@@ -1,0 +1,97 @@
+.headerContainer {
+  height: 100vh;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  padding: 7% 8% 1.5% 7%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.headerDescription {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Merriweather", serif;
+}
+
+.headerText {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 8%;
+  color: #1c3988;
+}
+
+.headerSearch {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+}
+
+.searchContainer {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f3f3fa;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.searchInput {
+  width: 70%;
+  height: 50%;
+  background-color: white;
+  border: none;
+  padding-left: 10px;
+}
+
+.searchButton {
+  width: 30%;
+  height: 50%;
+  background-color: #1c3988;
+  border: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-family: "Merriweather", serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerImage {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerImage img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 60px;
+  justify-content: center;
+}
+
+.headerText p {
+  text-align: justify;
+  padding-top: 20px;
+  justify-content: center;
+}
