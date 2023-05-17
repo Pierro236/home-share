@@ -1,14 +1,13 @@
 .offerContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+  height: 320px;
+  width: 280px;
   background-color: white;
-  box-shadow: black 0px 0px 5px 0px;
+  box-shadow: black 0px 0px 2px 0px;
   transition: transform 0.3s ease-in-out;
   animation: fadeIn 1s ease-in-out forwards;
-  border-radius: 10px;
+  cursor: pointer;
 }
 
 @keyframes fadeIn {
@@ -36,7 +35,6 @@
 .offerImage img {
   width: 100%;
   height: 100%;
-  border-radius: 10px 10px 0px 0px;
 }
 
 .offerDescription {
@@ -46,6 +44,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.like {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 89%;
 }
 
 h3 {

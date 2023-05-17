@@ -11,18 +11,14 @@ const OfferItem = (props) => {
 
   return (
     <div className={styles.offerContainer}>
+      <div className={styles.like} onClick={handleLike}>
+        <AiFillHeart color={liked ? "red" : "#252526cc"} size={20} />
+      </div>
       <div className={styles.offerImage}>
         <img src={props.image} alt="offer" />
       </div>
       <div className={styles.offerDescription}>
         <h3>{props.title}</h3>
-        <div onClick={handleLike}>
-          <AiFillHeart
-            color={liked ? "red" : "gray"}
-            size={20}
-            style={{ textAlign: "right" }}
-          />
-        </div>
       </div>
     </div>
   );
