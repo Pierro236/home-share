@@ -5,11 +5,11 @@ import styles from "./Account.module.css";
 
 const Account = () => {
   const [isEditing, setIsEditing] = useState(false);
-  const [pseudo, setPseudo] = useState('Utilisateur');
-  const [nom, setNom] = useState('Nom');
-  const [prenom, setPrenom] = useState('Prénom');
-  const [email, setEmail] = useState('utilisateur@example.com');
-  const [adresse, setAdresse] = useState('');
+  const [username, setPseudo] = useState('Username');
+  const [firstName, setNom] = useState('First Name');
+  const [lastName, setPrenom] = useState('Last Name');
+  const [email, setEmail] = useState('user@example.com');
+  const [adress, setAdresse] = useState('');
 
   const handleEdit = () => {
     setIsEditing(true);
@@ -27,43 +27,43 @@ const Account = () => {
       </section>
       <div className={styles.styleContainer}>
         <div className={styles.textContainer}>
-          <h2>Mon profil</h2>
+          <h2>My profile</h2>
           {!isEditing && (
             <div>
-              <p>Pseudo: {pseudo}</p>
-              <p>Nom: {nom}</p>
-              <p>Prénom: {prenom}</p>
+              <p>Username: {username}</p>
+              <p>First Name: {firstName}</p>
+              <p>Last Name: {lastName}</p>
               <p>E-mail: {email}</p>
-              <p>Adresse: {adresse}</p>
+              <p>Adress: {adress}</p>
             </div>
           )}
           {isEditing && (
             <div className={styles.formContainer}>
               <label>
-                Pseudo:
-                <input type="text" value={pseudo} onChange={(event) => setPseudo(event.target.value)} />
+                Username:
+                <input type="text" value={username} onChange={(event) => setPseudo(event.target.value)} />
               </label>
               <label>
-                Nom:
-                <input type="text" value={nom} onChange={(event) => setNom(event.target.value)} />
+                First Name:
+                <input type="text" value={firstName} onChange={(event) => setNom(event.target.value)} />
               </label>
               <label>
-                Prénom:
-                <input type="text" value={prenom} onChange={(event) => setPrenom(event.target.value)} />
+                Last Name:
+                <input type="text" value={lastName} onChange={(event) => setPrenom(event.target.value)} />
               </label>
               <label>
                 E-mail:
                 <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} />
               </label>
               <label>
-                Adresse:
-                <input type="text" value={adresse} onChange={(event) => setAdresse(event.target.value)} />
+                Adress:
+                <input type="text" value={adress} onChange={(event) => setAdresse(event.target.value)} />
               </label>
-              <button className={styles.editButton} onClick={handleSave}>Enregistrer</button>
+              <button className={styles.editButton} onClick={handleSave}>Save</button>
             </div>
           )}
           {!isEditing && (
-            <button className={styles.editButton} onClick={handleEdit}>Modifier</button>
+            <button className={styles.editButton} onClick={handleEdit}>Modify</button>
           )}
         </div>
       </div>
