@@ -1,0 +1,24 @@
+.footerContainer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footerLinks,
+  .footerSocial,
+  .footerInfo {
+    margin-bottom: 10px;
+  }
+  
+  .footerLinks a,
+  .footerSocial a {
+    margin: 0 10px;
+    color: #555;
+    text-decoration: none;
+  }
+  
+  .footerInfo {
+    font-size: 14px;
+    color: #888;
+  }
+  
