@@ -1,38 +1,70 @@
-.account-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .form-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 10px;
-  }
-  
-  input[type='text'],
-  input[type='email'] {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 150px;
-  }
-  
-  button:hover {
-    background-color: #0069d9;
-  }
-  
+
+.accountContainer {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.accountContainer h2 {
+  text-align: center;
+}
+
+.accountContainer .formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.accountContainer label {
+  margin-bottom: 10px;
+}
+
+.accountContainer input[type='text'],
+.accountContainer input[type='email'] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.accountContainer .editButton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.accountContainer .editButton:hover {
+  background-color: #0069d9;
+}
+
+.styleContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ajustez la hauteur selon vos besoins */
+}
+
+.textContainer{
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f2;
+  width: 30%;
+  text-align: center;
+}
+.textContainer p{
+  margin-top:1em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.textContainer h2{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}

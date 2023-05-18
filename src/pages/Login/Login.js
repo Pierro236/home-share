@@ -26,22 +26,24 @@ function Login() {
           <img src={logo} alt="Logo" />
         </div>
         <div className={styles.loginFormContainer}>
-          <h1>Connexion</h1>
-          <form onSubmit={handleSubmit}>
+          <div className={styles.container}>
+            <h1>Sign in</h1>
+            <form className={styles.form} onSubmit={handleSubmit}>
             <label>
-              Nom d'utilisateur:
+              Username:
               <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
             </label>
             <label>
-              Mot de passe:
+              Password:
               <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
             </label>
-            <button type="submit">Se connecter</button>
-          </form>
-          <div className={styles.createAccountLink}>
-            <Link to={"/signup"}>
-              <li>Créer un compte</li>
-            </Link>
+            <button type="submit">Log in</button>
+            </form>
+            <div className={styles.createAccountLink}>
+              <Link to={"/signup"}>
+                <li className={styles.createAccountButton}>Create an account</li>
+              </Link>
+            </div>
           </div>
         </div>
 

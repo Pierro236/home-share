@@ -1,7 +1,10 @@
 .footerContainer {
-    background-color: #f5f5f5;
+    background-color: #1c3988;
     padding: 20px;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
   
   .footerLinks,
@@ -13,12 +16,12 @@
   .footerLinks a,
   .footerSocial a {
     margin: 0 10px;
-    color: #555;
+    color: white;
     text-decoration: none;
   }
   
   .footerInfo {
     font-size: 14px;
-    color: #888;
+    color: white;
   }
   

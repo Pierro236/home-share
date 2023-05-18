@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.footerLinks}>
-        <a href="/cgu">Conditions générales d'utilisation</a>
-        <a href="/confidentialite">Politique de confidentialité</a>
-        <a href="/contact">Contactez-nous</a>
+        <a href="/cgu">Terms of Service</a>
+        <a href="/confidentialite">Privacy Policy</a>
+        <a href="/contact">Contact us</a>
       </div>
       <div className={styles.footerSocial}>
         <a href="https://www.facebook.com/">Facebook</a>
@@ -17,7 +17,7 @@ const Footer = () => {
         <a href="https://www.instagram.com/">Instagram</a>
       </div>
       <div className={styles.footerInfo}>
-        © {new Date().getFullYear()} HomeShare. Tous droits réservés.
+        © {new Date().getFullYear()} HomeShare. All rights reserved.
       </div>
     </footer>
   );
