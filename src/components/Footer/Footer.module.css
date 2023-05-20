@@ -1,0 +1,28 @@
+.footerContainer {
+    background-color: #1c3988;
+    padding: 10px;
+    padding-bottom: 0%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footerLinks,
+  .footerSocial,
+  .footerInfo {
+    margin-bottom: 10px;
+  }
+  
+  .footerLinks a,
+  .footerSocial a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footerInfo {
+    font-size: 14px;
+    color: white;
+  }
+  
