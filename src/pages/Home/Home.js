@@ -9,7 +9,8 @@ import aboutImage from "../../images/aboutimage.png";
 
 const Home = () => {
   const [loaded, setLoaded] = useState(false);
-
+  const displayedOffers = 4;
+  const visibleOffers = OfferItems.slice(0, displayedOffers);
   useEffect(() => {
     setLoaded(true);
   }, []);
@@ -24,7 +25,7 @@ const Home = () => {
         <div
           className={`${styles.offerListContainer} ${loaded && styles.loaded}`}
         >
-          {OfferItems.map((item) => (
+          {visibleOffers.map((item) => (
             <OfferItem key={item.id} title={item.title} image={item.image} />
           ))}
         </div>
