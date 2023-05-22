@@ -5,7 +5,7 @@ import './Login.module.css';
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from '../../components/Footer/Footer';
 import styles from "./Login.module.css";
-import logo from '../../images/logo.jpg';
+import logo from '../../images/logo2.png';
 import { Link } from 'react-router-dom';
 
 function Login() {
