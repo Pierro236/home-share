@@ -6,6 +6,8 @@ import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
 import Account from "./pages/Account/Account";
 import Administrator from "./pages/Administrator/Administrator";
+import Messaging from "./pages/Messaging/Messaging";
+
 
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/account" element={<Account />} />
         <Route path="/admin" element={<Administrator />} />
+        <Route path="/messaging" element={<Messaging/>}/>
       </Routes>
     </div>
   );
