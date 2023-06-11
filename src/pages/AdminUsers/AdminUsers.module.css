@@ -1,0 +1,47 @@
+.admin{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.container{
+  text-align: center;
+  justify-content: center;
+  margin-left:300px;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+table {
+  background: #1c3988;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: 1em;
+}
+th {
+  border-bottom: 1px solid #1c3988;
+  color: whitesmoke;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+td {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65em 1em;
+}
+.disabled td {
+  color: #4F5F64;
+}
+tbody tr {
+  transition: background 0.25s ease;
+}
+tbody tr:hover {
+  background: #6E8AE9;
+}

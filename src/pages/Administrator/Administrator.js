@@ -1,17 +1,14 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
-import Header from "../../components/Header/Header";
+import styles from "./Administrator.module.css"
 import Sidebar from "../../components/Sidebar/Sidebar";
 
-const Administrator = () => {
+function Administrator() {
   return (
-    
-    <div className="admin-page">
-        <Header />
-        <Navbar />
+    <div className={styles.admin}>
         <Sidebar />
-        <div className="admin-content">
-            <p>Welcome to Administrator Page !</p>
+        <div className={styles.content}>
+          <h1>Dashboard</h1>
+          <p>Welcome to Administrator Page !</p>
         </div>
     </div>
   );
