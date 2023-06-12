@@ -10,7 +10,6 @@ import AdminAnnonces from "./pages/adminAnnonces/AdminAnnonces";
 import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
 import Account from "./pages/Account/Account";
-import Administrator from "./pages/Administrator/Administrator";
 import Messaging from "./pages/Messaging/Messaging";
 
 function App() {
