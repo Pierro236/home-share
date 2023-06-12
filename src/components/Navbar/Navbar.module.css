@@ -44,6 +44,10 @@ li {
   text-decoration: none;
 }
 
+.BiUserCircle{
+  padding-right: 10;
+}
+
 @media only screen and (max-width: 768px) {
   .navbarContainer {
     flex-wrap: wrap;
@@ -55,10 +59,26 @@ li {
   .navbarContainer a {
     width: auto;
     margin: 0.625em;
+    margin-left: 2em;
   }
 
   .navbarContainer .userProfile {
     margin-right: 0;
     margin-left: auto;
   }
+  .userProfile {
+    width: 20%;
+    margin-right: 4% !important;
+  }
+  .BiUserCircle{
+    margin-right: -2em;
+  }
 }
+
+
+
+
+
+
+
+

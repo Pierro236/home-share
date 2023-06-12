@@ -27,7 +27,7 @@ function Navbar() {
           <li>FAQ</li>
         </Link>
         <div className={styles.userProfile}>
-          <BiUserCircle color="white" size={30} style={{ paddingRight: 10 }} />
+          <BiUserCircle color="white" size={30} className={styles.BiUserCircle} />
           <Link to={"/account"}>
             <li style={{ color: "white" }}>Profile</li>
           </Link>
