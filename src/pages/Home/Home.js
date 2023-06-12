@@ -20,7 +20,7 @@ const Home = () => {
         <Header />
       </section>
       <section className={styles.offerSection}>
-        <h1>Top Offers </h1>
+        <h1>Test </h1>
         <div
           className={`${styles.offerListContainer} ${loaded && styles.loaded}`}
         >
