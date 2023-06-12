@@ -40,3 +40,28 @@
 .row #title{
     flex: 70%;
 }
+.sidebar {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebarLink {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebarLink:hover {
+  color: #555;
+}
+

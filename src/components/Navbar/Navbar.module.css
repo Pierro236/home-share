@@ -5,7 +5,7 @@
   height: 12%;
   flex-direction: row;
   top: 0;
-  box-shadow: 1px 1px 1px 1px #ccc;
+  box-shadow: 0.063em 0.063em 0.063em 0.063em #ccc;
   position: fixed;
   background-color: white;
   z-index: 1000;
@@ -13,7 +13,7 @@
 }
 
 .navbarContainer a {
-  width: 80px;
+  width: 5em;
   align-items: center;
   display: block;
   justify-content: center;
@@ -38,8 +38,47 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 0.625em;
   color: whitesmoke;
   margin-right: 12% !important;
   text-decoration: none;
 }
+
+.BiUserCircle{
+  padding-right: 10;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbarContainer {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 1.25em;
+    justify-content: flex-start;
+  }
+
+  .navbarContainer a {
+    width: auto;
+    margin: 0.625em;
+    margin-left: 2em;
+  }
+
+  .navbarContainer .userProfile {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .userProfile {
+    width: 20%;
+    margin-right: 4% !important;
+  }
+  .BiUserCircle{
+    margin-right: -2em;
+  }
+}
+
+
+
+
+
+
+
+

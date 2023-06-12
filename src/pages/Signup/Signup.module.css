@@ -1,0 +1,90 @@
+/* Signup.css */
+
+.signupContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+  }
+  
+  .signupForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 2.5em;
+    border-radius: 0.5em;
+    box-shadow: 0em 0.125em 0.25em rgba(0, 0, 0, 0.2);
+    width: 31.25em;
+    max-width: 90%;
+    padding-top: 0.938em;
+    padding-bottom: 0.50em;
+  }
+  
+  .signupForm h1 {
+    font-size: 2rem;
+    margin-bottom: 1.25em;
+
+  }
+  
+  .signupForm label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    margin-right: 1em;
+  }
+  
+  .signupForm input[type="text"],
+  .signupForm input[type="email"],
+  .signupForm input[type="password"] {
+    padding: 0.625em;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 0.125em solid #ccc;
+    margin-bottom: 1.25em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .signupForm .nameInputs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .signupForm .passwordInputs {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .signupForm button[type="submit"] {
+    background-color: #1c9aff;
+    color: #fff;
+    border: none;
+    padding: 0.625em 1.25em;
+    border-radius: 0.25em;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .signupForm button[type="submit"]:hover {
+    background-color: #047aed;
+  }
+  
+  .signupForm a {
+    color: #1c9aff;
+  }
+  
+  .signupForm a:hover {
+    text-decoration: underline;
+  }
+  
+  #fName, #password{
+    padding-right: 10%;
+  }
+
+

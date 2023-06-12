@@ -14,7 +14,7 @@ function Navbar() {
           className={styles.logo}
           onClick={() => navigate("/")}
         />
-        <Link to={"/"} style={{ textDecoration: "none" }}>
+        <Link to={"/login"} style={{ textDecoration: "none" }}>
           <li>Sign in</li>
         </Link>
         <Link to={"/offers"} style={{ textDecoration: "none" }}>
@@ -27,8 +27,8 @@ function Navbar() {
           <li>FAQ</li>
         </Link>
         <div className={styles.userProfile}>
-          <BiUserCircle color="white" size={30} style={{ paddingRight: 10 }} />
-          <Link>
+          <BiUserCircle color="white" size={30} className={styles.BiUserCircle} />
+          <Link to={"/account"}>
             <li style={{ color: "white" }}>Profile</li>
           </Link>
         </div>
