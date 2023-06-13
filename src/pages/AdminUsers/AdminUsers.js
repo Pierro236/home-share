@@ -1,38 +1,44 @@
-import React, { useState, useEffect } from 'react';
-import styles from './AdminUsers.module.css';
-import Sidebar from '../../components/Sidebar/Sidebar';
+import React, { useState, useEffect } from "react";
+import styles from "./AdminUsers.module.css";
+import Sidebar from "../../components/Sidebar/Sidebar";
 
 function AdminUsers() {
   const [users, setUsers] = useState([]);
 
-  // Exemple de fonction pour récupérer les utilisateurs depuis une API ou une source de données
   const fetchUsers = async () => {
     try {
-      // Effectuez une requête pour récupérer les utilisateurs depuis votre API
-      const response = await fetch('https://example.com/api/users');
-      const data = await response.json();
-      setUsers(data); // Mettez à jour le state avec les utilisateurs récupérés
+      const response = await fetch("http://localhost:8080/user/read");
+      if (response.ok) {
+        const data = await response.json();
+        setUsers(data);
+      } else {
+        console.log("Failed to fetch users");
+      }
     } catch (error) {
-      console.log('Erreur lors de la récupération des utilisateurs :', error);
+      console.log("Error occurred while fetching users:", error);
     }
   };
 
-  // Utilisez useEffect pour effectuer la récupération des utilisateurs lors du chargement de la page
   useEffect(() => {
     fetchUsers();
   }, []);
 
-  // Utilisateurs fictifs
-  const fictitiousUsers = [
-    { id: 1, name: 'John Doe', email: 'johndoe@example.com', role: 'Admin' },
-    { id: 2, name: 'Jane Smith', email: 'janesmith@example.com', role: 'User' },
-    { id: 3, name: 'Mike Johnson', email: 'mikejohnson@example.com', role: 'User' }
-  ];
-
-  // Ajouter les utilisateurs fictifs à la liste des utilisateurs
-  useEffect(() => {
-    setUsers(fictitiousUsers);
-  }, []);
+  const handleDeleteUser = async (id) => {
+    try {
+      const response = await fetch(`http://localhost:8080/user/delete/${id}`, {
+        method: "DELETE",
+      });
+      if (response.ok) {
+        console.log(`User with ID ${id} deleted successfully`);
+        // Fetch users again to update the list after deletion
+        fetchUsers();
+      } else {
+        console.log(`Failed to delete user with ID ${id}`);
+      }
+    } catch (error) {
+      console.log(`Error occurred while deleting user with ID ${id}:`, error);
+    }
+  };
 
   return (
     <div className={styles.admin}>
@@ -51,13 +57,22 @@ function AdminUsers() {
           </thead>
           <tbody>
             {users.map((user) => (
-              <tr key={user.id}>
-                <td>{user.id}</td>
-                <td>{user.name}</td>
+              <tr key={user.userid}>
+                <td>{user.userid}</td>
+                <td>{user.firstname}</td>
+                <td>{user.lastname}</td>
                 <td>{user.email}</td>
-                <td>{user.role}</td>
+                <td>User</td>
                 <td>
                   <button className={styles.editButton}>Edit</button>
+                </td>
+                <td>
+                  <button
+                    className={styles.editButton}
+                    onClick={() => handleDeleteUser(user.userid)}
+                  >
+                    Delete
+                  </button>
                 </td>
               </tr>
             ))}

@@ -1,4 +1,4 @@
-.admin{
+.admin {
   width: 100vw;
   height: 100vh;
   text-align: center;
@@ -6,13 +6,15 @@
   flex-direction: row;
 }
 
-.container{
+.container {
   text-align: center;
   justify-content: center;
-  margin-left:300px;
+  margin-left: 300px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -37,11 +39,23 @@ td {
   padding: 0.65em 1em;
 }
 .disabled td {
-  color: #4F5F64;
+  color: #4f5f64;
 }
 tbody tr {
   transition: background 0.25s ease;
 }
 tbody tr:hover {
-  background: #6E8AE9;
+  background: #6e8ae9;
+}
+
+.editButton {
+  background: #fff;
+  border: none;
+  border-radius: 0.25em;
+  color: #1c3988;
+  cursor: pointer;
+  font-size: 0.85em;
+  padding: 0.65em 1em;
+  transition: background 0.25s ease;
+  width: 60px;
 }
