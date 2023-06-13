@@ -11,6 +11,8 @@ import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
 import Account from "./pages/Account/Account";
 import Messaging from "./pages/Messaging/Messaging";
+import Offer from "./pages/Offer/Offer";
+import Newlocation from "./pages/Newlocation/Newlocation";
 
 function App() {
   return (
@@ -21,12 +23,15 @@ function App() {
         <Route path="/admin" element={<Administrator />} />
         <Route path="/adminUsers" element={<AdminUsers />} />
         <Route path="/adminFAQ" element={<AdminFAQ />} />
-        <Route path="/adminMailbox" element={<AdminMailbox/>}/>
-        <Route path="/adminAnnonces" element={<AdminAnnonces/>}/>
+        <Route path="/adminMailbox" element={<AdminMailbox />} />
+        <Route path="/adminAnnonces" element={<AdminAnnonces />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/account" element={<Account />} />
-        <Route path="/messaging" element={<Messaging/>}/>
+        <Route path="/messaging" element={<Messaging />} />
+        <Route path="/admin" element={<Administrator />} />
+        <Route path="/offer/id" element={<Offer />} />
+        <Route path="/newlocation" element={<Newlocation />} />
       </Routes>
     </div>
   );

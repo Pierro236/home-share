@@ -1,0 +1,78 @@
+/* Newlocation.css */
+
+.newlocationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.newlocationForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 2.5em;
+    border-radius: 0.5em;
+    box-shadow: 0em 0.125em 0.25em rgba(0, 0, 0, 0.2);
+    width: 500px;
+    max-width: 90%;
+    padding-top: 0.938em;
+    padding-bottom: 1.25em;
+}
+.newlocationForm h1 {
+    font-size: 2rem;
+    margin-bottom: 1.25em;
+
+}
+.newlocationForm label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    margin-right: 1em;
+}
+
+.newlocationForm input[type="text"],
+.newloctionForm input[type="email"]{
+    padding: 0.625em;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 0.125em solid #ccc;
+    margin-bottom: 1.2em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.newlocationForm button[type="submit"] {
+    background-color: #1c9aff;
+    color: #fff;
+    border: none;
+    padding: 0.625em 1.25em;
+    border-radius: 0.25em;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.newlocationForm button[type="submit"]:hover {
+    background-color: #047aed;
+}
+
+.newlocationForm a {
+    color: #1c9aff;
+}
+
+.newlocationForm a:hover {
+    text-decoration: underline;
+}
+.error-message {
+    color: black;
+    background-color: white;
+    padding: 0.625em;
+    border: 0.0625em solid black;
+}
+
+
