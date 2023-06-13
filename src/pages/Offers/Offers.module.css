@@ -77,22 +77,23 @@
 .offerContainer {
   height: 180vh;
   background-color: white;
-  padding: 20px 10px 20px 10px;
+  padding: 5px;
 }
 .offerListContainer {
   margin: 0 10%;
   padding-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
-  gap: 55px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 50px;
+  justify-items: center; /* Center items horizontally */
 }
 
 .moreOffersContainer {
-  position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
-  left: 175%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto; /* Remove left positioning */
 }
 
 .moreOffersButton {
@@ -111,8 +112,9 @@
   height: 300px;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
-  left: 175%;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .spinnerIcon {

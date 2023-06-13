@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 import { MdPets } from "react-icons/md";
+import { AiFillStar } from "react-icons/ai";
 import { RiPlantLine } from "react-icons/ri";
 import { MdHome } from "react-icons/md";
 import { RiWifiLine } from "react-icons/ri";
@@ -22,6 +23,7 @@ const Offer = () => {
   const [description, setDescription] = useState(
     "La résidence étudiante Colombes Arc Sportif vous accueille dans son établissement de 11 studios de 14 à 36m² tous équipés d'un espace couchage, un espace bureau, un espace cuisine ainsi que d'un espace salle d'eau."
   );
+  const [rate, setRate] = useState(4);
 
   const [carouselImages, setCarouselImages] = useState(images);
   const nextImage = () => {
@@ -133,7 +135,23 @@ const Offer = () => {
               </div>
             </div>
           </div>
-          <div className={styles.rightContainer}></div>
+          <div className={styles.rightContainer}>
+            <div className={styles.rate}>
+              <p>
+                Rating {rate} <AiFillStar color="yellow" size={22} />
+              </p>
+            </div>
+            <div className={styles.owner}>
+              <div className={styles.ownerImage}>
+                <img src={image1} alt="owner" />
+              </div>
+              <div className={styles.ownerDetails}>
+                <p>John Doe</p>
+                <p>johndoe@gmail.com</p>
+                <div className={styles.book}>Book now</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />

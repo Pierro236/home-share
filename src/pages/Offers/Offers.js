@@ -7,7 +7,7 @@ import OfferItems from "../../data/data";
 import OfferItem from "../../components/OfferItem/OfferItem";
 
 const Offers = () => {
-  const [displayedOffers, setDisplayedOffers] = useState(4);
+  const [displayedOffers, setDisplayedOffers] = useState(8);
   const [loaded, setLoaded] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -29,7 +29,7 @@ const Offers = () => {
     <div>
       <Navbar />
       <div className={styles.container}>
-        <h1 style={{ color: "black" }}>Search for an Offer</h1>
+        <h1 style={{ color: "black" }}>Search for an Offer Can</h1>
         <p style={{ textAlign: "center" }}>
           Choose from the most advantageous offers
         </p>
@@ -71,23 +71,29 @@ const Offers = () => {
             }`}
           >
             {visibleOffers.map((item) => (
-              <OfferItem key={item.id} title={item.title} image={item.image} />
+              <OfferItem
+                key={item.id}
+                title={item.title}
+                image={item.image}
+                owner={item.owner}
+                date={item.date}
+              />
             ))}
-            {loading ? (
-              <div className={styles.spinner}>
-                <FaSpinner className={styles.spinnerIcon} size={70} />
-              </div>
-            ) : (
-              <div className={styles.moreOffersContainer}>
-                <button
-                  className={styles.moreOffersButton}
-                  onClick={loadMoreOffers}
-                >
-                  More Offers
-                </button>
-              </div>
-            )}
           </div>
+          {loading ? (
+            <div className={styles.spinner}>
+              <FaSpinner className={styles.spinnerIcon} size={70} />
+            </div>
+          ) : (
+            <div className={styles.moreOffersContainer}>
+              <button
+                className={styles.moreOffersButton}
+                onClick={loadMoreOffers}
+              >
+                More Offers
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>

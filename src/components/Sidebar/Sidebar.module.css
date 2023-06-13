@@ -41,11 +41,6 @@
 .row #title {
   flex: 70%;
 }
-.sidebar {
-  width: 200px;
-  background-color: #f0f0f0;
-  padding: 20px;
-}
 
 .sidebar ul {
   list-style: none;
