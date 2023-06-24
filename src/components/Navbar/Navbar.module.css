@@ -10,6 +10,7 @@
   background-color: white;
   z-index: 1000;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .navbarContainer a {
@@ -44,7 +45,7 @@ li {
   text-decoration: none;
 }
 
-.BiUserCircle{
+.BiUserCircle {
   padding-right: 10;
 }
 
@@ -70,15 +71,7 @@ li {
     width: 20%;
     margin-right: 4% !important;
   }
-  .BiUserCircle{
+  .BiUserCircle {
     margin-right: -2em;
   }
 }
-
-
-
-
-
-
-
-

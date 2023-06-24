@@ -1,28 +1,28 @@
 .footerContainer {
-    background-color: #1c3988;
-    padding: 0.625em;
-    padding-bottom: 0%;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .footerLinks,
-  .footerSocial,
-  .footerInfo {
-    margin-bottom: 0.625em;
-  }
-  
-  .footerLinks a,
-  .footerSocial a {
-    margin: 0 0.625em;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .footerInfo {
-    font-size: 0.875em;
-    color: white;
-  }
-  
+  background-color: #1c3988;
+  padding: 0.625em;
+  padding-bottom: 0%;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.footerLinks,
+.footerSocial,
+.footerInfo {
+  margin-bottom: 0.625em;
+}
+
+.footerLinks a,
+.footerSocial a {
+  margin: 0 0.625em;
+  color: white;
+  text-decoration: none;
+}
+
+.footerInfo {
+  font-size: 0.875em;
+  color: white;
+}

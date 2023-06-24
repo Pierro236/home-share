@@ -3,13 +3,28 @@ import Navbar from "../../components/Navbar/Navbar";
 import styles from "../Offers/Offers.module.css";
 import { BiSearch } from "react-icons/bi";
 import { FaSpinner } from "react-icons/fa";
-import OfferItems from "../../data/data";
 import OfferItem from "../../components/OfferItem/OfferItem";
 
 const Offers = () => {
+  const [offers, setOffers] = useState([]);
   const [displayedOffers, setDisplayedOffers] = useState(8);
   const [loaded, setLoaded] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const fetchOffers = async () => {
+    try {
+      const response = await fetch("http://localhost:8080/home/read");
+      if (response.ok) {
+        const data = await response.json();
+        setOffers(data);
+      } else {
+        console.log("Failed to fetch offers");
+      }
+    } catch (error) {
+      console.log("Error occurred while fetching offers:", error);
+    }
+  };
 
   const loadMoreOffers = () => {
     setLoading(true);
@@ -20,16 +35,25 @@ const Offers = () => {
   };
 
   useEffect(() => {
+    fetchOffers();
     setLoaded(true);
   }, []);
 
-  const visibleOffers = OfferItems.slice(0, displayedOffers);
+  const visibleOffers = offers
+    .filter((offer) =>
+      offer.title.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+    .slice(0, displayedOffers);
+
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+  };
 
   return (
     <div>
       <Navbar />
       <div className={styles.container}>
-        <h1 style={{ color: "black" }}>Search for an Offer Can</h1>
+        <h1 style={{ color: "black" }}>Search for an Offer</h1>
         <p style={{ textAlign: "center" }}>
           Choose from the most advantageous offers
         </p>
@@ -38,6 +62,8 @@ const Offers = () => {
             <input
               className={styles.searchInput}
               placeholder="Search Location"
+              value={searchTerm}
+              onChange={handleSearch}
             ></input>
             <div className={styles.searchButton}>
               <BiSearch color="white" size={24} />
@@ -70,13 +96,13 @@ const Offers = () => {
               loaded && styles.loaded
             }`}
           >
-            {visibleOffers.map((item) => (
+            {visibleOffers.map((offer) => (
               <OfferItem
-                key={item.id}
-                title={item.title}
-                image={item.image}
-                owner={item.owner}
-                date={item.date}
+                key={offer.id}
+                title={offer.title}
+                image={offer.image1}
+                owner={offer.owner}
+                date={offer.date}
               />
             ))}
           </div>

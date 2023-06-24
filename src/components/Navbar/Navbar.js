@@ -64,9 +64,15 @@ function Navbar() {
       <Link to={"/about"} style={{ textDecoration: "none" }}>
         <li>About us</li>
       </Link>
-      <Link to={"/faq"} style={{ textDecoration: "none" }}>
-        <li>FAQ</li>
-      </Link>
+      {isConnected ? (
+        <Link to={"/newlocation"} style={{ textDecoration: "none" }}>
+          <li>Add Offer</li>
+        </Link>
+      ) : (
+        <Link to={"/faq"} style={{ textDecoration: "none" }}>
+          <li>FAQ</li>
+        </Link>
+      )}
       <div className={styles.userProfile}>
         <BiUserCircle color="white" size={30} className={styles.BiUserCircle} />
         <Link to={"/account"}>
